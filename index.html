@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Car Management</h1>
+        <form id="car-form" class="mb-4">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="car-make">Make</label>
+                    <input type="text" class="form-control" id="car-make" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="car-model">Model</label>
+                    <input type="text" class="form-control" id="car-model" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="car-year">Year</label>
+                    <input type="number" class="form-control" id="car-year" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Car</button>
+        </form>
+        <ul id="car-list" class="list-group"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
